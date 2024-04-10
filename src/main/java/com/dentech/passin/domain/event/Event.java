@@ -1,6 +1,7 @@
 package com.dentech.passin.domain.event;
 
 import jakarta.persistence.*;
+import lombok.*;
 
 @Entity
 @Table(name = "events")
@@ -8,7 +9,7 @@ public class Event {
     @Id
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    privite String id;
+    private String id;
 
-    Private String title;
+    private String title;
 }
